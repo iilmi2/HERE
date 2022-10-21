@@ -1,0 +1,33 @@
+﻿@page
+@model TrainWebApp.Pages.ContactModel
+@{
+}
+<div class="alert-info">
+    @Html.Raw(Model.FeedbackMessage)
+</div>
+<form method="post">
+    <div>
+        <label asp-for="Username" class="form-label">Username</label>
+        <input type="email" class="form-control" asp-for="Username" required />
+    </div>
+        <div>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" asp-for="Subject" required>
+            <option selected>Open this select menu</option>
+            <option value="Contributing">Contribution</option>
+            <option value="Request Membership">Request Membership</option>
+            <option value="Bug Report">Bug Report</option>
+        </select>
+    </div>
+    <div>
+        <label asp-for="Title" class="form-label">Subject</label>
+        <input type="text" class="form-control" asp-for="Title" required/>
+    </div>
+    <div>
+        <label asp-for="Message" class="form-label">Message</label>
+        <textarea asp-for="Message" class="form-control" required></textarea>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary" asp-page-handler="Send">Send</button>
+</form>
