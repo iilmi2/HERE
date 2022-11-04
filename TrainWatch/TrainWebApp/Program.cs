@@ -1,5 +1,16 @@
+#region namespace required to setup database services
+using Microsoft.EntityFrameworkCore;
+using TrainWatchSystem; // To be able to set extension method AddBackendDependencies in StartupExtensions.cs
+#endregion
+
+
 var builder = WebApplication.CreateBuilder(args);
 
+#region code required to setup database service
+var dbConnectionString = builder.Configuration.GetConnectionString("TrainWatchLocalDB");
+builder.Services.AddBackendDependencies(options => options.UseSqlServer(dbConnectionString));
+
+#endregion
 // Add services to the container.
 builder.Services.AddRazorPages();
 

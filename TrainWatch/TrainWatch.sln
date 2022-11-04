@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainWebApp", "TrainWebApp\TrainWebApp.csproj", "{BF94E2E2-BAB1-4FA5-AEE4-B32C433991D4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B7C133A5-E47A-42E2-A282-D7090ECE9C56} = {B7C133A5-E47A-42E2-A282-D7090ECE9C56}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainWatchSystem", "TrainWatchSystem\TrainWatchSystem.csproj", "{B7C133A5-E47A-42E2-A282-D7090ECE9C56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{BF94E2E2-BAB1-4FA5-AEE4-B32C433991D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF94E2E2-BAB1-4FA5-AEE4-B32C433991D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF94E2E2-BAB1-4FA5-AEE4-B32C433991D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C133A5-E47A-42E2-A282-D7090ECE9C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C133A5-E47A-42E2-A282-D7090ECE9C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C133A5-E47A-42E2-A282-D7090ECE9C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C133A5-E47A-42E2-A282-D7090ECE9C56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
